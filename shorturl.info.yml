@@ -1,0 +1,5 @@
+name: shorturl
+type: module
+description: converting long url to short url
+package: Custom
+core_version_requirement: ^9 || ^10

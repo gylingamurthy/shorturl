@@ -1,0 +1,22 @@
+shorturl.example:
+  path: '/shorturl/lglink'
+  defaults:
+    _title: 'Example1'
+    _controller: '\Drupal\shorturl\Controller\ShorturlController::build'
+  requirements:
+    _permission: 'access content'
+shorturl.shlist:
+  path: '/shorturl/shlink'
+  defaults:
+    _title: 'Example2'
+    _controller: '\Drupal\shorturl\Controller\ShorturlController::getlist'
+  requirements:
+    _permission: 'access content'
+shorturl.redirect:
+  path: '/view-details/{scode}'
+  defaults:
+    _title: 'Example3'
+    _controller: '\Drupal\shorturl\Controller\ShorturlController::redirecturl'
+  scode: 'support-request'
+  requirements:
+    _permission: 'access content'
